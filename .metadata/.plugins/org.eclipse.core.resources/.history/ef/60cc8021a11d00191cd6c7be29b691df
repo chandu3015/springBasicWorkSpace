@@ -1,0 +1,13 @@
+package com.chandu.db.dbFundmentals;
+
+import org.springframework.boot.SpringApplication;
+
+public class PersistenceDemo {
+
+	public static void main(String[] args) {
+		
+		SpringApplication.run(DbFundmentalsApplication.class, args);
+
+	}
+
+}

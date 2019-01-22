@@ -1,0 +1,17 @@
+package com.chandu.db.dbFundmentals.dao;
+
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import com.chandu.db.dbFundmentals.entity.Person;
+
+@Repository
+public class PersonDao {
+	
+	JDBCTemplate jdbcTemplate;
+	
+	List<Person> person;
+	
+
+}

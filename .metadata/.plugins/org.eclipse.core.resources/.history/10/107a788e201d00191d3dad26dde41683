@@ -1,0 +1,34 @@
+package com.chandu.db.dbFundmentals;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.chandu.db.dbFundmentals.dao.PersonDao;
+import com.chandu.db.dbFundmentals.entity.Person;
+
+@SpringBootApplication
+public class DbFundmentalsApplication implements CommandLineRunner {
+
+	@Autowired
+	PersonDao personDao;
+	
+	public static void main(String[] args) {
+		SpringApplication.run(DbFundmentalsApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		List<Person> personList = personDao.findAll();
+		
+		for(  Person person: personList)
+		{
+			System.out.println(person.getName());
+		}
+	}
+
+}
+

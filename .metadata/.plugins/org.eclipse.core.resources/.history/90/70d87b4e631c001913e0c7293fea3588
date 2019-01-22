@@ -1,0 +1,7 @@
+package com.chandu.springBootBasics.chanduSrpingBootBasic;
+
+@Service
+public class Business1 {
+
+	
+}

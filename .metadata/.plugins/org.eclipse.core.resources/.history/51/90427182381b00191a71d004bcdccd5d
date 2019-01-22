@@ -1,0 +1,21 @@
+package com.chandu.spring.basics.springBasicArtifact;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+
+import com.chandu.spring.basics.springBasicArtifact.scope.PersonDao;
+
+@SpringBootApplication
+public class SpringBasicArtifactApplicationScope {
+	
+	public static void main(String[] args) {
+		ApplicationContext applicationContext =  SpringApplication.run(SpringBasicArtifactApplicationBasic.class, args);
+					
+		PersonDao personDao= applicationContext.getBean(PersonDao.class);
+		
+		
+	}
+
+}

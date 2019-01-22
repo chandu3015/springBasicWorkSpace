@@ -1,0 +1,12 @@
+package com.chandu.db.dbFundmentals.dao;
+
+import java.util.List;
+
+import com.chandu.db.dbFundmentals.entity.Person;
+
+public class PersonDao {
+	
+	List<Person> person;
+	
+
+}

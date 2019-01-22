@@ -1,0 +1,38 @@
+package com.chandu.spring.basics.springBasicArtifact.basic;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class BinarySearchImpl {
+	
+	
+	@Autowired
+	private SortAlg sortAlg;
+	
+	public BinarySearchImpl(SortAlg sortAlg)
+	{
+		this.sortAlg = sortAlg;
+	}
+	
+	
+	
+	public int binarySearch(int[] num, int umberToSearch)
+	{
+		System.out.println("In binarySearch...");
+		System.out.println("Calling sort Algorithm..");
+		//sorting array
+		sortAlg.sort(num);
+		
+		//perform search
+		
+		
+		//return result
+		
+		return 0;
+		
+	}
+	
+	
+
+}

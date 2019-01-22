@@ -1,0 +1,28 @@
+package com.chandu.db.dbFundmentals;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.chandu.db.dbFundmentals.dao.UserRepository;
+
+@SpringBootApplication
+public class PersistenceDemo implements Runnable {
+	
+	@Autowired
+	UserRepository userRepo;
+
+	public static void main(String[] args) {
+		
+		SpringApplication.run(DbFundmentalsApplication.class, args);
+
+	}
+
+	@Override
+	public void run() {
+		
+		System.out.println("Geeting user by ID 2 is "+userRepo.findById(2000).getName());
+		
+	}
+
+}

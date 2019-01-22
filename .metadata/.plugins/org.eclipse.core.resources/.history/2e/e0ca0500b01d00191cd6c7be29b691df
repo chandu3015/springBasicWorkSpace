@@ -1,0 +1,5 @@
+package com.chandu.db.dbFundmentals.dao;
+
+public class SpringDataRepository {
+
+}

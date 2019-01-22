@@ -1,0 +1,8 @@
+package com.chandu.db.dbFundmentals.entity;
+
+public class Person {
+
+	private int id;
+	private String name;
+	private 
+}

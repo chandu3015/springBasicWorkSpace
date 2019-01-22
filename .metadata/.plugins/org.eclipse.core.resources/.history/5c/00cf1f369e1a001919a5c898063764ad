@@ -1,0 +1,14 @@
+package com.chandu.spring.basics.springBasicArtifact;
+
+public class BubbleSortAlg {
+	
+	
+	public int[] sort(int  num[])
+	{
+		
+		System.out.println("In bubble Sort");
+		
+		return null;
+	}
+
+}

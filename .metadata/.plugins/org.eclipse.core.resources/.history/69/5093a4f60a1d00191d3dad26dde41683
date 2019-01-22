@@ -1,0 +1,10 @@
+package com.chandu.spring.aop.basic.springAopBasics.aspect;
+
+import org.springframework.context.annotation.Configuration;
+
+@BeforeAspect
+@Configuration
+public class Aspect {
+	
+
+}

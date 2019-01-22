@@ -1,0 +1,19 @@
+package com.chandu.spring.basics.springBasicArtifact;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringBasicArtifactApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringBasicArtifactApplication.class, args);
+		
+		SortAlg sortAlg = new QuickSortAlg();
+		
+		BinarySearchImpl binarySearchImpl = new BinarySearchImpl(sortAlg);
+		binarySearchImpl.binarySearch(new int[] {12,45,33}, 5);
+	}
+
+}
+

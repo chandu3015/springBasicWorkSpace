@@ -1,0 +1,28 @@
+package com.chandu.spring.basics.Components;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class PersonDao {
+	
+	@Autowired
+	ComponentJdbcConnection jdbcConnection;
+	
+	public PersonDao(ComponentJdbcConnection jdbcConnection)
+	{
+		this.jdbcConnection = jdbcConnection;
+	}
+
+	public ComponentJdbcConnection getJdbcConnection() {
+		return jdbcConnection;
+	}
+
+	public void setJdbcConnection(ComponentJdbcConnection jdbcConnection) {
+		this.jdbcConnection = jdbcConnection;
+	}
+	
+	
+	
+
+}

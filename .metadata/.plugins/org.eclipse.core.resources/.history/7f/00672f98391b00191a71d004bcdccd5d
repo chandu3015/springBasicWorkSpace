@@ -1,0 +1,17 @@
+package com.chandu.spring.basics.springBasicArtifact.scope;
+
+
+import org.springframework.stereotype.Component;
+
+@Component
+@Scope()
+public class JdbcConnection {
+	
+	
+	
+	public JdbcConnection()
+	{
+		System.out.println("JDBC Connection class constructor..");
+	}
+
+}

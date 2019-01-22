@@ -1,0 +1,19 @@
+package com.chandu.spring.basics.springBasicArtifact;
+
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component
+@Primary
+public class BubbleSortAlg implements  SortAlg{
+	
+	
+	public int[] sort(int  num[])
+	{
+		
+		System.out.println("In bubble Sort");
+		
+		return null;
+	}
+
+}

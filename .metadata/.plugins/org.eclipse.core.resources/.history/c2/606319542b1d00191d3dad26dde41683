@@ -1,0 +1,51 @@
+package com.chandu.db.dbFundmentals;
+
+import java.util.Iterator;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.chandu.db.dbFundmentals.dao.PersonDao;
+import com.chandu.db.dbFundmentals.entity.Person;
+
+@SpringBootApplication
+public class DbFundmentalsApplication implements CommandLineRunner {
+
+	@Autowired
+	PersonDao personDao;
+	
+	public static void main(String[] args) {
+		SpringApplication.run(DbFundmentalsApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		
+		  List<Person> personList = personDao.findAll();
+		 
+		System.out.println("List using for each");
+		for(  Person person: personList)
+		{
+			System.out.println(person.getName());
+		}
+		
+		System.out.println("List using for Iterator");
+		Iterator<Person> personiterator = personList.iterator();
+		while(personiterator.hasNext())
+		{
+			System.out.println(personiterator.next().getName());
+		}
+		
+		System.out.println("Person details..");
+		Person p1 = personDao.findbyId(1);
+		
+		System.out.println("Retrived User is:"+p1.getId()+"-->"+p1.getName());
+		
+		System.out.println("Deleted  User is:"+personDao.deleteById(1));
+	}
+
+}
+

@@ -1,0 +1,19 @@
+package com.chandu.spring.aop.basic.springAopBasics;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class Business2 {
+
+	@Autowired
+	private Dao2 dao2;
+	
+	
+	public String calCulateSomething()
+	{
+		return dao2.retrieveSomething();
+	}
+	
+	
+}

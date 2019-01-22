@@ -1,0 +1,5 @@
+package com.chandu.spring.basics.springBasicArtifact.scope;
+
+public class PersonDao {
+
+}

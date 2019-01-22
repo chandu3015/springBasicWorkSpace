@@ -1,0 +1,10 @@
+package com.chandu.springBootBasics.chanduSrpingBootBasic;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class BookController {
+
+	@GetMapping("/books")
+	
+}

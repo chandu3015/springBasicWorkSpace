@@ -1,0 +1,7 @@
+package com.chandu.spring.basics.springBasicArtifact.scope;
+
+
+@Component
+public class JdbcConnection {
+
+}

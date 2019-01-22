@@ -1,0 +1,7 @@
+package com.chandu.spring.basics.springBasicArtifact;
+
+interface  SortAlg {
+	
+	public int[] sort(int  num[]);
+
+}

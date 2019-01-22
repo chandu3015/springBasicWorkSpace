@@ -1,0 +1,13 @@
+package com.chandu.spring.basics.springBasicArtifact;
+
+public class QuickSortAlg implements  SortAlg{
+	
+	public int[] sort(int  num[])
+	{
+		
+		System.out.println("In Quick Sort");
+		
+		return null;
+	}
+
+}

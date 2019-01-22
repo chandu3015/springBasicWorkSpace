@@ -1,0 +1,10 @@
+package com.chandu.springBootBasics.chanduSrpingBootBasic;
+
+public class Book {
+	private log id;
+	private String name;
+	private String author;
+	
+	
+
+}

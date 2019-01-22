@@ -1,0 +1,10 @@
+create table Person
+(
+id integer not null,
+name varchar(255) not null,
+location varchar(255),
+birth_date timestamp,
+primary key(id)
+);
+
+insert into Person (id,name,location,birth_date) values(1,"chandu","HOU",sysDate());
